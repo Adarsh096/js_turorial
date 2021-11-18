@@ -1,0 +1,17 @@
+/* just to test the link of css with html */
+/* body{
+    background: red;
+} */
+
+.title{
+    color: blue;
+}
+
+.about-title{
+    color: aqua;
+}
+
+#contact-us{
+    color: brown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

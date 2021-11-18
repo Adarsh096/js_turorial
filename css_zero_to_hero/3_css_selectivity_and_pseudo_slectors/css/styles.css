@@ -1,0 +1,66 @@
+h2{
+    color: red;
+}
+
+/* class selectors have more specificity and thus below will override the h2 slector above for about section */
+/* The class can be used to select multiple items unlike the id selectors which are unique by convention. */
+.about-title{
+    color: blue;
+}
+
+/* id selector is more specific than the class and thus will override the class selector or the element tag selector */
+/* There can be only one id in an html file */
+#contact-us{
+    color: rgba(255, 0, 255, 0.712);
+}
+
+/* inline styling is the highest specific and thus it will override all the other css stylings.
+We define inline styles in the html element tag itself */
+
+
+/* Pseudo selectors  */
+/* hover pseudo selector */
+.title:hover{
+    color: red;
+}
+
+/* For lists we have first-child, last-child, nth-child() pseudo slectors */
+/* for sytling the first entry of the list */
+/* NOTE : this does not work. we need to mention the element we are styling ie li instead of ul. 
+Similar for tables we need to use td instead of table thead or tr tags*/
+ul:first-child{
+    color:pink;
+}
+/* this works */
+li:first-child{
+    color: chartreuse;
+}
+/* for styling the last child */
+li:last-child{
+    color: yellow;
+}
+
+/* for styling any nth child we pass the number as  */
+li:nth-child(2){
+    color: slateblue;
+}
+
+/* only child selector will select elements with only one child */
+li:only-child{
+    color: purple;
+}
+
+/* for link tags we have the following pseudo selectors */
+/* styles the link before its clicked */
+#our-link:link{
+    color:chartreuse
+}
+/* styles the link after its clicked */
+#our-link:visited{
+    color:brown;
+}
+/* adding the hover effect which got overriden above */
+#our-link:hover{
+    color:blue;
+}
+

@@ -1,0 +1,56 @@
+/* Advanced selector */
+
+/* adjacent element selector */
+/* styles the links followed immediately after h2 tag */
+h2 + a{
+    color:red;
+}
+
+/* general sibling selector */
+/* to style every button follwed by the textarea which has same parent */
+textarea ~ button{
+    color: rgb(196, 7, 196);
+}
+
+/* child selector */
+/* every single child of a certain element is selected */
+/* this styles all the li elements which are under ul tag */
+ul>li{
+    color: blue;
+}
+
+/* nested tags ; decendent selector */
+/* li which eventually comes under td */
+td li{
+    color: green;
+}
+
+
+
+/* selecting certain attributes of certain selectors */
+/* tag[attr=value] */
+
+/* following works exactly the same as selecting by .subtitile{} selector */
+h2[class=subtitle]{
+    color: blue;
+}
+
+/* ^= symbol works like LIKE operator of SQL and checks the startswith*/
+img[src^='../assets/']{
+    border: 10px solid black;
+    border-image: round;
+}
+
+/* endswith check */
+img[src$='../assets/']{
+    border: 10px solid black;
+    border-image: round;
+}
+
+/* anywhere check */
+img[src*='../assets/']{
+    border: 10px solid black;
+    border-image: round;
+}
+
+

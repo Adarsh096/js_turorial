@@ -1,0 +1,36 @@
+css = cascading style sheets
+css provides :
+    styling
+    layout and design
+    animations
+    font changes
+    grid systems
+
+Latest and popular version is css3
+
+------------------------------------------
+
+=> To test the link of css with html pages just create a simple background style for body content and just open the index.html
+sample css can be :
+    body{
+        background: red;
+    }
+
+=> selectors are used to apply styling to particular section of html.
+    It can be the name of the tag and {} 
+    Eg :
+        p{
+        }
+    Eg:
+        h2{
+        }
+=> we can select all documents with same class tags like :
+    Syntax : 
+        .anyClass{
+        }
+    
+=> we can select by id  like following:
+    Syntax:
+        #anyID{
+        }
+
